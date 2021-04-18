@@ -1,0 +1,72 @@
+.home {
+  //padding:16px ;
+  .home-container {
+    display: flex;
+    .home-modal {
+      height: 85vh;
+      // background:$hr_background;
+      background: $hr_modalbr;
+      width: 35%;
+      border-radius: 30px;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .modal-1 {
+        display: flex;
+        background-color: $hr_white;
+        height: 18vh;
+        width: 85%;
+        border-radius: 15px;
+        margin-left: 15px;
+        .right-icon {
+          color: #10adb9;
+          cursor: pointer;
+        }
+        .modal-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          svg {
+            height: 15px;
+          }
+          p {
+            margin-left: 25px;
+            font-size: 20px;
+          }
+        }
+        .number {
+          display: flex;
+          background-color: #10adb9;
+          width: 20%;
+          border-radius: 10px;
+          h5 {
+            text-align: center;
+            align-self: center;
+            margin-left: 25px;
+          }
+        }
+        .modal-icons {
+          display: flex;
+          justify-content: space-around;
+          // width: 100%;
+        }
+      }
+    }
+    .nav-bar {
+      margin-left: 40px;
+      border-bottom: 6px solid whitesmoke;
+      height: 8vh;
+
+      &:hover {
+        color: transparentize($color: #10adb9, $amount: 0.6);
+        border-bottom: 4px solid transparentize($color: #10adb9, $amount: 0.6);
+      }
+      &.selected {
+        color: #10adb9;
+        border-right: 4px solid #10adb9;
+        width: 8%;
+      }
+    }
+  }
+}

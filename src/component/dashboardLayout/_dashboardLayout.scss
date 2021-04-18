@@ -1,0 +1,115 @@
+.dashboard {
+  display: flex;
+  // height: 100vh;   // for  dashboard whole cover height here
+  padding: 12px;
+  //  background-color: $hr_white;
+  .side-nav-bar {
+    flex-basis: 20%;
+    max-width: 250px;
+    min-width: 200px;
+    //  background-color:$hr_background;
+  }
+  .main-container {
+    flex-basis: 80%;
+    border-radius: 24px;
+    background-color: $hr_white;
+  }
+  .logo-container {
+    // text-align: center;
+    // height: 100px;
+    // width: 25%;
+    .image {
+      height: 50px;
+    }
+  }
+  .nav-container {
+    padding-top: 16px;
+    padding-left: 16px;
+    a {
+      text-decoration: none;
+    }
+    .nav-item {
+      display: flex;
+      align-items: center;
+      color: $hr_text;
+      padding: 8px;
+      margin-top: 32px;
+      cursor: pointer;
+      transition: 0.2s all ease-in-out;
+      .item-name {
+        margin-left: 16px;
+        font-weight: 800;
+        cursor: pointer;
+      }
+      &:hover {
+        color: transparentize($color: #10adb9, $amount: 0.6);
+        border-right: 4px solid transparentize($color: #10adb9, $amount: 0.6);
+      }
+      &.selected {
+        color: #10adb9;
+        border-right: 4px solid #10adb9;
+      }
+    }
+  }
+  .myfiles {
+    padding-top: 16px;
+    padding-left: 16px;
+    // display: flex;
+    align-items: center;
+    color: $hr_white;
+    padding: 8px;
+    margin-left: 16px;
+    // margin-top: 32px;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+    }
+    .nav-item {
+      display: flex;
+      align-items: center;
+      color: $hr_text;
+      padding: 8px;
+      // margin-top: 32px;
+      cursor: pointer;
+      transition: 0.2s all ease-in-out;
+      .item-name {
+        margin-left: 16px;
+        font-weight: 800;
+        cursor: pointer;
+      }
+      &:hover {
+        color: transparentize($color: #10adb9, $amount: 0.6);
+        border-right: 4px solid transparentize($color: #10adb9, $amount: 0.6);
+      }
+      &.selected {
+        color: #10adb9;
+        border-right: 4px solid #10adb9;
+      }
+    }
+  }
+  .timezone {
+    // padding-top:16px;
+    padding-left: 16px;
+    // display: flex;
+    align-items: center;
+
+    padding: 8px;
+    margin-top: 32px;
+    margin-left: 16px;
+    cursor: pointer;
+    h4 {
+      color: $hr_text;
+    }
+    h5 {
+      color: $hr_gray1;
+    }
+    &:hover {
+      color: transparentize($color: #10adb9, $amount: 0.6);
+      // border-right: 4px solid transparentize($color: #10ADB9, $amount:0.6);
+    }
+    &.selected {
+      color: #10adb9;
+      //  border-right: 2px solid #10ADB9;
+    }
+  }
+}
