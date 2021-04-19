@@ -20,26 +20,46 @@ class NewNav extends Component {
   btnClick() {
     this.setState({
       showPara: true,
+      showInformation: false,
+      showTask: false,
+      showResource: false,
+      showSolution: false,
     });
   }
   Information() {
     this.setState({
       showInformation: true,
+      showPara: false,
+      showTask: false,
+      showResource: false,
+      showSolution: false,
     });
   }
   Task() {
     this.setState({
       showTask: true,
+      showResource: false,
+      showSolution: false,
+      showInformation: false,
+      showPara: false,
     });
   }
   Resources() {
     this.setState({
       showResource: true,
+      showTask: false,
+      showSolution: false,
+      showInformation: false,
+      showPara: false,
     });
   }
   Solution() {
     this.setState({
       showSolution: true,
+      showResource: false,
+      showTask: false,
+      showSolution: false,
+      showInformation: false,
     });
   }
 
